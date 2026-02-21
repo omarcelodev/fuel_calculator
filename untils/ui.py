@@ -14,3 +14,8 @@ def menu():
     print("(2) ETANOL")
     print("(3) DISEL")
     print("(0) SAIR")
+
+def resultado(combustivel, litros_gastos, custo_total):
+    print(combustivel.nome)
+    print(f"Litros gastos: {litros_gastos:.2f} L")
+    print(f"Custo total: R$ {custo_total:.2f} ")
