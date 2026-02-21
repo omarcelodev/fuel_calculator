@@ -58,3 +58,33 @@ def get_distancia_percorrida():
         else:
             print("\nDistância inválida! Tente novamente.")
             pause()
+
+# Função para ler o consumo médio do veículo
+def read_consumo_medio():
+    return input("Digite o consumo médio (km/L): ")
+
+# Função para validar o consumo médio do veículo
+def validar_consumo_medio(consumo):
+    try:
+        consumo = float(consumo)
+        if consumo > 0:
+            return consumo
+        else:
+            return None
+    except ValueError:
+        return None
+
+# Função para obter o consumo médio do veículo
+def get_consumo_medio():
+    while True:
+        clear()
+        print("=== CALCULADOR DE COMBUSTIVEL === \n")
+
+        user_input = read_consumo_medio()
+        consumo = validar_consumo_medio(user_input)
+
+        if consumo is not None:
+            return consumo
+        else:
+            print("\nConsumo médio inválido! Tente novamente.")
+            pause()

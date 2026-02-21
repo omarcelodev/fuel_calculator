@@ -4,22 +4,11 @@ def main():
     while True:
         option = u.get_option()
 
-        if option == 1:
-            print("Gasolina")
-            distancia = u.get_distancia_percorrida()
-            u.pause()
-        elif option == 2:
-            print("Etanol")
-            distancia = u.get_distancia_percorrida()
-            u.pause()
-        elif option == 3:
-            print("Disel")
-            distancia = u.get_distancia_percorrida()
-            u.pause()
-        elif option == 0:
-            print("\nPrograma encerrado. . .")
+        if option == 0:
+            print("Programa encerrado")
             break
-        else:
-            print("\nOpção Inválida!")
+        
+        if option in [1, 2, 3]:
+            distancia = u.get_distancia_percorrida()
             u.pause()
 main()
