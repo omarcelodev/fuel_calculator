@@ -1,22 +1,25 @@
-from untils import clear, pause, menu, get_option
+import untils as u
 
 def main():
     while True:
-        option = get_option()
+        option = u.get_option()
 
         if option == 1:
             print("Gasolina")
-            pause()
+            distancia = u.get_distancia_percorrida()
+            u.pause()
         elif option == 2:
             print("Etanol")
-            pause()
+            distancia = u.get_distancia_percorrida()
+            u.pause()
         elif option == 3:
             print("Disel")
-            pause()
+            distancia = u.get_distancia_percorrida()
+            u.pause()
         elif option == 0:
             print("\nPrograma encerrado. . .")
             break
         else:
             print("\nOpção Inválida!")
-            pause()
+            u.pause()
 main()

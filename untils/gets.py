@@ -28,3 +28,33 @@ def get_option():
         else:
             print("\nOpção inválida! Tente novamente.")
             pause()
+
+# Função para ler a distância percorrida
+def read_distancia_percorrida():
+    return input("Digite a distância percorrida (km): ")
+
+# Função para validar a distância percorrida
+def validar_distancia_percorrida(distancia):
+    try:
+        distancia = float(distancia)
+        if distancia > 0:
+            return distancia
+        else:
+            return None
+    except ValueError:
+        return None
+
+# Função para obter a distância percorrida do usuário
+def get_distancia_percorrida():
+    while True:
+        clear()
+        print("=== CALCULADOR DE COMBUSTIVEL === \n")
+
+        user_input = read_distancia_percorrida()
+        distancia = validar_distancia_percorrida(user_input)
+
+        if distancia is not None:
+            return distancia
+        else:
+            print("\nDistância inválida! Tente novamente.")
+            pause()
