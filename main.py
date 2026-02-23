@@ -19,10 +19,10 @@ def main():
         
         distancia = u.get_distancia_percorrida()
         consumo = u.get_consumo_medio()
-        u.pause()
         u.clear()
 
         combustivel = f.Combustivel(nome, distancia, consumo, preco)
+
         litros_gastos= combustivel.calcular_litros_gastos()
         custo_total = combustivel.calcular_custo_total()
         

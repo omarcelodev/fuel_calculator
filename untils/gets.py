@@ -61,12 +61,12 @@ def get_distancia_percorrida():
 
 # Função para ler o consumo médio do veículo
 def read_consumo_medio():
-    return input("Digite o consumo médio (km/L): ")
+    return input("Digite o consumo médio do veículo (km/L): ")
 
 # Função para validar o consumo médio do veículo
-def validar_consumo_medio(consumo):
+def validar_consumo_medio(user_input):
     try:
-        consumo = float(consumo)
+        consumo = float(user_input.replace(",", "."))
         if consumo > 0:
             return consumo
         else:
