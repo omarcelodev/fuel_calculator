@@ -109,9 +109,3 @@ This project is licensed under the MIT License.
 Developed by Marcelo.
 
 ```
-- Depois adiciona prints da aplicação rodando
-
-Isso transforma projeto simples em projeto apresentável.
-
-Se quiser, posso montar também uma versão ainda mais enxuta e estratégica (para recrutador ler em 30 segundos).
-```
