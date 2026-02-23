@@ -16,18 +16,23 @@ def validar_option(option):
         return None
 
 # Função para obter a opção do usuário, garantindo que seja válida
-def get_option():
+def get_option(mensagem):
     while True:
         clear()
         menu()
-        user_input = read_option()
-        option = validar_option(user_input)
+        user_input = input(mensagem)
+        
+        try:
+            option = int(user_input)
 
-        if option is not None:
-            return option
-        else:
-            print("\nOpção inválida! Tente novamente.")
-            pause()
+            if option in [0, 1, 2, 3]:
+                return option
+
+        except ValueError:
+            pass
+        
+        print("\nOpção inválida! Tente novamente.")
+        pause()
 
 # Função para ler número float positivo 
 def get_float_positivo(mensagem):

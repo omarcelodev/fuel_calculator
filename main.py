@@ -9,7 +9,7 @@ PRECOS = {
 
 def main():
     while True:
-        option = u.get_option()
+        option = u.get_option("Sua opção: ")
 
         if option == 0:
             print("Programa encerrado. . .")
