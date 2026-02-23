@@ -9,7 +9,6 @@ def get_option(mensagem):
         
         try:
             option = int(user_input)
-
             if option in [0, 1, 2, 3]:
                 return option
 
@@ -30,6 +29,7 @@ def get_float_positivo(mensagem):
             valor = float(user_input.replace(",", "."))
             if valor > 0:
                 return valor
+            
         except ValueError:
             pass
 

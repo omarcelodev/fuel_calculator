@@ -1,6 +1,7 @@
 import untils as u
 import fuel as f
 
+# Dicionario com tuplas dos combustíveis
 PRECOS = {
     1: ("Gasolina", 6.19),
     2: ("Etanol", 4.59),
@@ -16,7 +17,6 @@ def main():
             break
 
         nome, preco = PRECOS[option]
-        
         distancia = u.get_float_positivo("Digite a distância (km): ")
         consumo = u.get_float_positivo("Digite o consumo (km/L): ")
         u.clear()

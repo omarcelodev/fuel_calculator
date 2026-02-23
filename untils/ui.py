@@ -1,11 +1,14 @@
 import os
 
+# Função para limpar o terminal
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+# Função para pausar o fluxo do programa e continuar quando o usuário desejar
 def pause():
     input("Pressione ENTER para continuar. . .")
 
+# Função para imprimir o título do programa
 def header():
     print("=== CALCULADOR DE COMBUSTIVEL ===\n")
 
@@ -18,6 +21,7 @@ def menu():
     print("(3) DIESEL    -  R$5,29")
     print("(0) SAIR")
 
+# Função para exibir o resultado
 def resultado(combustivel, litros_gastos, custo_total):
     header()
     print("Resumo do consumo: ")
