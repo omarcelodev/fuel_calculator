@@ -60,20 +60,17 @@ fuel_calculator/
 ---
 ## 📸 Screenshots
 
-### 1. Main Menu
+### 1. Menu
 ![Program Menu](assets/menu.png)
 
-### 2. Chose Option
-![Chosse Option](assets/chose-option.png)
+### 2. Distancia
+![Chosse Option](assets/distancia.png)
 
-### 3. Resume Payment
-![Resume Payment](assets/resume.png)
+### 3. Consumo
+![Resume Payment](assets/consumo.png)
 
-### 4. Confirm Payment
-![Confirm Payment](assets/confirm-payment.png)
-
-### 5. Exemple CSV
-![Confirm Payment](assets/csv-exemple.png)
+### 4. Resultado
+![Confirm Payment](assets/resultado.png)
 ---
 
 ## ▶️ How to Run
@@ -124,6 +121,7 @@ This project is licensed under the MIT License.
 ## 👨‍💻 Author
 
 Developed by Marcelo.
+
 
 
 
