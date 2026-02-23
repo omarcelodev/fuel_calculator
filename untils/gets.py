@@ -1,4 +1,4 @@
-from .ui import clear, pause, menu
+from .ui import clear, pause, menu, header
 
 # Função para ler a opção do usuário
 def read_option():
@@ -48,7 +48,7 @@ def validar_distancia_percorrida(user_input):
 def get_distancia_percorrida():
     while True:
         clear()
-        print("=== CALCULADOR DE COMBUSTIVEL === \n")
+        header()
 
         user_input = read_distancia_percorrida()
         distancia = validar_distancia_percorrida(user_input)
@@ -78,7 +78,7 @@ def validar_consumo_medio(user_input):
 def get_consumo_medio():
     while True:
         clear()
-        print("=== CALCULADOR DE COMBUSTIVEL === \n")
+        header()
 
         user_input = read_consumo_medio()
         consumo = validar_consumo_medio(user_input)

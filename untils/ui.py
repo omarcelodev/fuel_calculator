@@ -6,16 +6,21 @@ def clear():
 def pause():
     input("Pressione ENTER para continuar. . .")
 
+def header():
+    print("=== CALCULADOR DE COMBUSTIVEL ===\n")
+
 # Função para exibir o menu
 def menu():
-    print("=== CALCULADOR DE COMBUSTIVEL ===\n")
+    header()
     print("Escolha o Combustível:")
     print("(1) GASOLINA")
     print("(2) ETANOL")
-    print("(3) DISEL")
+    print("(3) DIESEL")
     print("(0) SAIR")
 
 def resultado(combustivel, litros_gastos, custo_total):
-    print(combustivel.nome)
-    print(f"Litros gastos: {litros_gastos:.2f} L")
-    print(f"Custo total: R$ {custo_total:.2f} ")
+    header()
+    print("Resumo do consumo: ")
+    print(f"Combustivel      : {combustivel.nome}")
+    print(f"Litros gastos    : {litros_gastos:.2f}L")
+    print(f"Custo total      : R${custo_total:.2f} ")
