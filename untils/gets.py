@@ -34,9 +34,9 @@ def read_distancia_percorrida():
     return input("Digite a distância percorrida (km): ")
 
 # Função para validar a distância percorrida
-def validar_distancia_percorrida(distancia):
+def validar_distancia_percorrida(user_input):
     try:
-        distancia = float(distancia)
+        distancia = float(user_input.replace(",","."))
         if distancia > 0:
             return distancia
         else:
