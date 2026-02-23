@@ -13,9 +13,9 @@ def header():
 def menu():
     header()
     print("Escolha o Combustível:")
-    print("(1) GASOLINA")
-    print("(2) ETANOL")
-    print("(3) DIESEL")
+    print("(1) GASOLINA  -  R$6,19")
+    print("(2) ETANOL    -  R$4,59")
+    print("(3) DIESEL    -  R$5,29")
     print("(0) SAIR")
 
 def resultado(combustivel, litros_gastos, custo_total):

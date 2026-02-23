@@ -23,7 +23,7 @@ def main():
 
         combustivel = f.Combustivel(nome, distancia, consumo, preco)
 
-        litros_gastos= combustivel.calcular_litros_gastos()
+        litros_gastos = combustivel.calcular_litros_gastos()
         custo_total = combustivel.calcular_custo_total(litros_gastos)
         
         u.resultado(combustivel, litros_gastos, custo_total)
