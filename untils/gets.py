@@ -1,21 +1,6 @@
 from .ui import clear, pause, menu, header
 
-# Função para ler a opção do usuário
-def read_option():
-    return input("Sua opção: ")
-
-# Função para validar a opção do usuário
-def validar_option(option):
-    try:
-        option = int(option)
-        if option in [0, 1, 2, 3]:
-            return option
-        else:
-            return None
-    except ValueError:
-        return None
-
-# Função para obter a opção do usuário, garantindo que seja válida
+# Função para obter a opção do usuário
 def get_option(mensagem):
     while True:
         clear()
@@ -30,7 +15,7 @@ def get_option(mensagem):
 
         except ValueError:
             pass
-        
+
         print("\nOpção inválida! Tente novamente.")
         pause()
 
