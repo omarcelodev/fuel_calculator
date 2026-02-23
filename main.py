@@ -12,7 +12,7 @@ def main():
         option = u.get_option()
 
         if option == 0:
-            print("Programa encerrado")
+            print("Programa encerrado. . .")
             break
 
         nome, preco = PRECOS[option]
@@ -24,8 +24,10 @@ def main():
         combustivel = f.Combustivel(nome, distancia, consumo, preco)
 
         litros_gastos= combustivel.calcular_litros_gastos()
-        custo_total = combustivel.calcular_custo_total()
+        custo_total = combustivel.calcular_custo_total(litros_gastos)
         
         u.resultado(combustivel, litros_gastos, custo_total)
         u.pause()
-main() 
+        
+if __name__ == "__main__":
+    main() 

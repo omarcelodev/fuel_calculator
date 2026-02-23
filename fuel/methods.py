@@ -8,7 +8,6 @@ class Combustivel:
     def calcular_litros_gastos(self):
         return self.distancia / self.consumo
     
-    def calcular_custo_total(self):
-        litros_gastos = self.calcular_litros_gastos()
+    def calcular_custo_total(self, litros_gastos):
         return litros_gastos * self.preco
     
