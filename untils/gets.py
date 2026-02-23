@@ -29,62 +29,19 @@ def get_option():
             print("\nOpção inválida! Tente novamente.")
             pause()
 
-# Função para ler a distância percorrida
-def read_distancia_percorrida():
-    return input("Digite a distância percorrida (km): ")
-
-# Função para validar a distância percorrida
-def validar_distancia_percorrida(user_input):
-    try:
-        distancia = float(user_input.replace(",","."))
-        if distancia > 0:
-            return distancia
-        else:
-            return None
-    except ValueError:
-        return None
-
-# Função para obter a distância percorrida do usuário
-def get_distancia_percorrida():
+# Função para ler número float positivo 
+def get_float_positivo(mensagem):
     while True:
         clear()
         header()
+        user_input = input(mensagem)
 
-        user_input = read_distancia_percorrida()
-        distancia = validar_distancia_percorrida(user_input)
+        try:
+            valor = float(user_input.replace(",", "."))
+            if valor > 0:
+                return valor
+        except ValueError:
+            pass
 
-        if distancia is not None:
-            return distancia
-        else:
-            print("\nDistância inválida! Tente novamente.")
-            pause()
-
-# Função para ler o consumo médio do veículo
-def read_consumo_medio():
-    return input("Digite o consumo médio do veículo (km/L): ")
-
-# Função para validar o consumo médio do veículo
-def validar_consumo_medio(user_input):
-    try:
-        consumo = float(user_input.replace(",", "."))
-        if consumo > 0:
-            return consumo
-        else:
-            return None
-    except ValueError:
-        return None
-
-# Função para obter o consumo médio do veículo
-def get_consumo_medio():
-    while True:
-        clear()
-        header()
-
-        user_input = read_consumo_medio()
-        consumo = validar_consumo_medio(user_input)
-
-        if consumo is not None:
-            return consumo
-        else:
-            print("\nConsumo médio inválido! Tente novamente.")
-            pause()
+        print("\nValor Inválido! Tente novamente.")
+        pause()

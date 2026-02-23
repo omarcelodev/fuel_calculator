@@ -17,8 +17,8 @@ def main():
 
         nome, preco = PRECOS[option]
         
-        distancia = u.get_distancia_percorrida()
-        consumo = u.get_consumo_medio()
+        distancia = u.get_float_positivo("Digite a distância (km): ")
+        consumo = u.get_float_positivo("Digite o consumo (km/L): ")
         u.clear()
 
         combustivel = f.Combustivel(nome, distancia, consumo, preco)
@@ -28,6 +28,6 @@ def main():
         
         u.resultado(combustivel, litros_gastos, custo_total)
         u.pause()
-        
+
 if __name__ == "__main__":
     main() 
