@@ -32,7 +32,7 @@ fuel_calculator/
 │   ├── **init**.py
 │   └── methods.py        # Business logic (Fuel class)
 │
-├── utils/
+├── untils/
 │   ├── **init**.py
 │   ├── gets.py           # Input handling and validation
 │   └── ui.py             # CLI interface utilities
@@ -109,3 +109,4 @@ This project is licensed under the MIT License.
 Developed by Marcelo.
 
 ```
+
